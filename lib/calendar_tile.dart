@@ -159,7 +159,7 @@ class NeatCleanCalendarTile extends StatelessWidget {
                   ),
                   // Grey color for previous or next months dates
                 ),
-                Text( date != null ? '${JHijri.now()}' : '',
+                Text( date != null ? '${JHijri.now().day}' : '',
                   style: TextStyle(
                     fontSize: 14.0,
                     fontWeight: FontWeight.w400,
