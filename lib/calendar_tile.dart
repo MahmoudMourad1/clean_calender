@@ -98,7 +98,8 @@ class NeatCleanCalendarTile extends StatelessWidget {
             // the color passed with the selectedColor parameter or red color.
             decoration: isSelected && date != null
                 ? BoxDecoration(
-                    shape: BoxShape.circle,
+              //that is the box shape from outside
+                    shape: BoxShape.rectangle,
                     color: selectedColor != null
                         ? Utils.isSameDay(this.date!, DateTime.now())
                             ? selectedTodayColor != null
@@ -170,7 +171,8 @@ class NeatCleanCalendarTile extends StatelessWidget {
                             width: 5.0,
                             height: 5.0,
                             decoration: BoxDecoration(
-                              shape: BoxShape.rectangle,
+                              //events small dots
+                              shape: BoxShape.circle,
                               // If event is done (isDone == true) set the color of the dots to
                               // the eventDoneColor (if given) otherwise use the primary color of
                               // the theme
