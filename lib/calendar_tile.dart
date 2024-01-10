@@ -99,13 +99,13 @@ class NeatCleanCalendarTile extends StatelessWidget {
           decoration: isSelected && date != null
               ? BoxDecoration(
             //that is the box shape from outside
-            border: Border.all(color: Colors.grey,width: 1),
+            // border: Border.all(color: Colors.grey,width: 1),
                   shape: BoxShape.rectangle,
                   color: selectedColor != null
                       ? Utils.isSameDay(this.date!, DateTime.now())
                           ? selectedTodayColor != null
                               ? selectedTodayColor
-                              : Colors.red
+                              : Colors.white
                           : selectedColor
                       : Theme.of(context).primaryColor,
                   image: events != null && events!.isNotEmpty
@@ -121,7 +121,7 @@ class NeatCleanCalendarTile extends StatelessWidget {
                   ? BoxDecoration()
                   : events!.isNotEmpty
                       ? BoxDecoration(
-            border: Border.all(color: Colors.grey,width: 1),
+            // border: Border.all(color: Colors.grey,width: 1),
                           shape: BoxShape.rectangle,
                           image: icon != '' && icon != null
                               ? DecorationImage(
@@ -131,7 +131,7 @@ class NeatCleanCalendarTile extends StatelessWidget {
                               : null,
                         )
                       : BoxDecoration(
-            border: Border.all(color: Colors.grey,width: 1),
+            // border: Border.all(color: Colors.grey,width: 1),
           ), // no decoration when not selected
           alignment: Alignment.center,
           child: Column(
