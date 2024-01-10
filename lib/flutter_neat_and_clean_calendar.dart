@@ -321,7 +321,7 @@ class _CalendarState extends State<Calendar> {
 
     if (!widget.hideTodayIcon) {
       todayIcon = GestureDetector(
-        child: Text(widget.todayButtonText),
+        child: Text(widget.todayButtonText,style: TextStyle(color: Colors.purple),),
         onTap: resetToToday,
       );
     } else {
@@ -409,14 +409,17 @@ class _CalendarState extends State<Calendar> {
         Expanded(
           child: Column(
             children: <Widget>[
-              todayIcon ?? Container(),
               Text(
                 displayMonth,
                 style: widget.displayMonthTextStyle ??
                     TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 14.0,
+                      color: Colors.cyan
+
                     ),
               ),
+              todayIcon ?? Container(),
+
             ],
           ),
         ),
