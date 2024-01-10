@@ -464,30 +464,25 @@ class _CalendarState extends State<Calendar> {
     widget.weekDays.forEach(
       (day) {
         dayWidgets.add(
-          Container(
-            decoration: BoxDecoration(
-              border: Border.all(width: 1,color: Colors.grey)
-            ),
-            child: NeatCleanCalendarTile(
+          NeatCleanCalendarTile(
 
 
-              defaultDayColor: widget.defaultDayColor,
-              defaultOutOfMonthDayColor: widget.defaultOutOfMonthDayColor,
-              selectedColor: widget.selectedColor,
-              selectedTodayColor: widget.selectedTodayColor,
-              todayColor: widget.todayColor,
-              eventColor: widget.eventColor,
-              eventDoneColor: widget.eventDoneColor,
-              events: eventsMap![day],
-              isDayOfWeek: true,
-              dayOfWeek: day,
-              dayOfWeekStyle: widget.dayOfWeekStyle ??
-                  TextStyle(
-                    color: widget.selectedColor,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 11,
-                  ),
-            ),
+            defaultDayColor: widget.defaultDayColor,
+            defaultOutOfMonthDayColor: widget.defaultOutOfMonthDayColor,
+            selectedColor: widget.selectedColor,
+            selectedTodayColor: widget.selectedTodayColor,
+            todayColor: widget.todayColor,
+            eventColor: widget.eventColor,
+            eventDoneColor: widget.eventDoneColor,
+            events: eventsMap![day],
+            isDayOfWeek: true,
+            dayOfWeek: day,
+            dayOfWeekStyle: widget.dayOfWeekStyle ??
+                TextStyle(
+                  color: widget.selectedColor,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 11,
+                ),
           ),
         );
       },
@@ -514,18 +509,23 @@ class _CalendarState extends State<Calendar> {
         if (this.widget.dayBuilder != null) {
           // Use the dayBuilder widget passed as parameter to render the date tile
           dayWidgets.add(
-            NeatCleanCalendarTile(
-              defaultDayColor: widget.defaultDayColor,
-              defaultOutOfMonthDayColor: widget.defaultOutOfMonthDayColor,
-              selectedColor: widget.selectedColor,
-              selectedTodayColor: widget.selectedTodayColor,
-              todayColor: widget.todayColor,
-              eventColor: widget.eventColor,
-              eventDoneColor: widget.eventDoneColor,
-              events: eventsMap![day],
-              child: widget.dayBuilder!(context, day),
-              date: day,
-              onDateSelected: () => handleSelectedDateAndUserCallback(day),
+            Container(
+              decoration: BoxDecoration(
+                  border: Border.all(width: 0.7,color: Colors.grey.shade200)
+              ),
+              child: NeatCleanCalendarTile(
+                defaultDayColor: widget.defaultDayColor,
+                defaultOutOfMonthDayColor: widget.defaultOutOfMonthDayColor,
+                selectedColor: widget.selectedColor,
+                selectedTodayColor: widget.selectedTodayColor,
+                todayColor: widget.todayColor,
+                eventColor: widget.eventColor,
+                eventDoneColor: widget.eventDoneColor,
+                events: eventsMap![day],
+                child: widget.dayBuilder!(context, day),
+                date: day,
+                onDateSelected: () => handleSelectedDateAndUserCallback(day),
+              ),
             ),
           );
         } else {
