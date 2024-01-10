@@ -123,6 +123,7 @@ class NeatCleanCalendarTile extends StatelessWidget {
                     : events!.isNotEmpty
                         ? BoxDecoration(
                             shape: BoxShape.rectangle,
+                            border: Border.all(color: Colors.grey,width: 2),
                             image: icon != '' && icon != null
                                 ? DecorationImage(
                                     fit: BoxFit.cover,
@@ -174,7 +175,7 @@ class NeatCleanCalendarTile extends StatelessWidget {
                         events!.isNotEmpty &&
                         icon != ''
                         ? Colors.white
-                        : Colors.black
+                        : Colors.purple
                         : (defaultOutOfMonthDayColor != null
                         ? defaultOutOfMonthDayColor
                         : Colors.grey),
