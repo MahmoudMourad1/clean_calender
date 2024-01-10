@@ -143,21 +143,22 @@ class NeatCleanCalendarTile extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 14.0,
                   fontWeight: FontWeight.w400,
-                  color: isSelected && this.date != null
-                      ? Colors.white
-                      : Utils.isSameDay(this.date!, DateTime.now())
-                          ? todayColor
-                          : inMonth
-                              ? defaultDayColor != null
-                                  ? defaultDayColor
-                                  : events != null &&
-                                          events!.isNotEmpty &&
-                                          icon != ''
-                                      ? Colors.white
-                                      : Colors.black
-                              : (defaultOutOfMonthDayColor != null
-                                  ? defaultOutOfMonthDayColor
-                                  : Colors.grey),
+                  color: Colors.cyan
+                  // color: isSelected && this.date != null
+                  //     ? Colors.white
+                  //     : Utils.isSameDay(this.date!, DateTime.now())
+                  //         ? todayColor
+                  //         : inMonth
+                  //             ? defaultDayColor != null
+                  //                 ? defaultDayColor
+                  //                 : events != null &&
+                  //                         events!.isNotEmpty &&
+                  //                         icon != ''
+                  //                     ? Colors.white
+                  //                     : Colors.black
+                  //             : (defaultOutOfMonthDayColor != null
+                  //                 ? defaultOutOfMonthDayColor
+                  //                 : Colors.grey),
                 ),
                 // Grey color for previous or next months dates
               ),
@@ -165,21 +166,22 @@ class NeatCleanCalendarTile extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 10.0,
                   fontWeight: FontWeight.w400,
-                  color: isSelected && this.date != null
-                      ? Colors.white
-                      : Utils.isSameDay(this.date!, DateTime.now())
-                      ? todayColor
-                      : inMonth
-                      ? defaultDayColor != null
-                      ? defaultDayColor
-                      : events != null &&
-                      events!.isNotEmpty &&
-                      icon != ''
-                      ? Colors.white
-                      : Colors.purple
-                      : (defaultOutOfMonthDayColor != null
-                      ? defaultOutOfMonthDayColor
-                      : Colors.grey),
+                  color: Colors.purple
+                  // color: isSelected && this.date != null
+                  //     ? Colors.white
+                  //     : Utils.isSameDay(this.date!, DateTime.now())
+                  //     ? todayColor
+                  //     : inMonth
+                  //     ? defaultDayColor != null
+                  //     ? defaultDayColor
+                  //     : events != null &&
+                  //     events!.isNotEmpty &&
+                  //     icon != ''
+                  //     ? Colors.white
+                  //     : Colors.purple
+                  //     : (defaultOutOfMonthDayColor != null
+                  //     ? defaultOutOfMonthDayColor
+                  //     : Colors.grey),
                 ),
               ),
               // Dots for the events
