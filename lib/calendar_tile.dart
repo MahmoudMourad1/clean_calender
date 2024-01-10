@@ -161,7 +161,7 @@ class NeatCleanCalendarTile extends StatelessWidget {
                 ),
                 Text( date != null ? '${JHijri.now().day}' : '',
                   style: TextStyle(
-                    fontSize: 14.0,
+                    fontSize: 8.0,
                     fontWeight: FontWeight.w400,
                     color: isSelected && this.date != null
                         ? Colors.white
