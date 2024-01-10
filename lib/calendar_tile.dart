@@ -119,7 +119,7 @@ class NeatCleanCalendarTile extends StatelessWidget {
                     ? BoxDecoration()
                     : events!.isNotEmpty
                         ? BoxDecoration(
-                            shape: BoxShape.circle,
+                            shape: BoxShape.rectangle,
                             image: icon != '' && icon != null
                                 ? DecorationImage(
                                     fit: BoxFit.cover,

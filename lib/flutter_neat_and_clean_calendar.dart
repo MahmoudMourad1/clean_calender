@@ -647,9 +647,7 @@ class _CalendarState extends State<Calendar> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: event.color,
-                                  // borderRadius: BorderRadius.circular(10),
-                                  shape: BoxShape.rectangle,
-                                  border: Border.all(color: Colors.black),
+                                   borderRadius: BorderRadius.circular(10),
                                   image: event.icon != '' && event.icon != null
                                       ? DecorationImage(
                                           fit: BoxFit.cover,
