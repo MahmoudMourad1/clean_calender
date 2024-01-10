@@ -431,8 +431,8 @@ class _CalendarState extends State<Calendar> {
       child: SimpleGestureDetector(
         onSwipeUp: _onSwipeUp,
         onSwipeDown: _onSwipeDown,
-        onSwipeLeft: _onSwipeLeft,
-        onSwipeRight: _onSwipeRight,
+        onSwipeLeft: _onSwipeRight,
+        onSwipeRight: _onSwipeLeft,
         swipeConfig: SimpleSwipeConfig(
           verticalThreshold: 10.0,
           horizontalThreshold: 40.0,
@@ -462,6 +462,7 @@ class _CalendarState extends State<Calendar> {
       (day) {
         dayWidgets.add(
           NeatCleanCalendarTile(
+
             defaultDayColor: widget.defaultDayColor,
             defaultOutOfMonthDayColor: widget.defaultOutOfMonthDayColor,
             selectedColor: widget.selectedColor,
