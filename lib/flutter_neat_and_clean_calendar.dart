@@ -527,7 +527,7 @@ class _CalendarState extends State<Calendar> {
           dayWidgets.add(
             Container(
               decoration: BoxDecoration(
-                  border: Border.all(width: 1,color: Colors.grey)
+                  border: Border.all(width: 0.5,color: Colors.grey.shade200)
               ),
               child: NeatCleanCalendarTile(
                   defaultDayColor: widget.defaultDayColor,
