@@ -321,7 +321,7 @@ class _CalendarState extends State<Calendar> {
 
     if (!widget.hideTodayIcon) {
       todayIcon = GestureDetector(
-        child: Text(widget.todayButtonText,style: TextStyle(color: Colors.purple),),
+        child: Text(widget.todayButtonText,style: TextStyle(color: Color(0xffb3476e)),),
         onTap: resetToToday,
       );
     } else {
