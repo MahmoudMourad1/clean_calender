@@ -143,7 +143,7 @@ class NeatCleanCalendarTile extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 14.0,
                   fontWeight: FontWeight.w400,
-                  color: Colors.cyan
+                  color: Color(0xff00a99f)
                   // color: isSelected && this.date != null
                   //     ? Colors.white
                   //     : Utils.isSameDay(this.date!, DateTime.now())
@@ -166,7 +166,7 @@ class NeatCleanCalendarTile extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 10.0,
                   fontWeight: FontWeight.w400,
-                  color: Colors.purple
+                  color: Color(0xffb3476e)
                   // color: isSelected && this.date != null
                   //     ? Colors.white
                   //     : Utils.isSameDay(this.date!, DateTime.now())
