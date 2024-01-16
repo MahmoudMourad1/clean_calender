@@ -203,7 +203,7 @@ class _CalendarState extends State<Calendar> {
     initializeDateFormatting(widget.locale, null).then((_) => setState(() {
           var monthFormat =DateFormat('MMMM yyyy', widget.locale).format(_selectedDate);
           displayMonth = '${monthFormat[0].toUpperCase()}${monthFormat.substring(1)}';
-          _hijriDate='${JHijri(fDate: DateFormat('MMMM yyyy').parse(monthFormat[0]),fDisplay: DisplayFormat.MMMYYYY).toString().replaceAll('-', ' ')}';
+          _hijriDate='${JHijri(fDate: DateFormat('MMMM yyyy').parse('${monthFormat[0].toUpperCase()}${monthFormat.substring(1)}'),fDisplay: DisplayFormat.MMMYYYY).toString().replaceAll('-', ' ')}';
         }));
   }
 
@@ -410,7 +410,7 @@ class _CalendarState extends State<Calendar> {
           child: Column(
             children: <Widget>[
               Text(
-                _hijriDate,
+                displayMonth,
                 style: widget.displayMonthTextStyle ??
                     TextStyle(
                       fontSize: 14.0,
