@@ -20,4 +20,17 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-flutter: null
+flutter:
+  assets:
+    - assets/fonts
+
+
+  uses-material-design: true
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Bold.ttf
+        - asset: assets/fonts/Tajawal-Regular.ttf
+          weight: 700
+          #style: italic
+

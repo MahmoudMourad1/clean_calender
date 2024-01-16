@@ -4,6 +4,7 @@ library flutter_neat_and_clean_calendar;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_neat_and_clean_calendar/date_picker_config.dart';
+import 'package:flutter_neat_and_clean_calendar/generated/assets.dart';
 import 'package:flutter_neat_and_clean_calendar/platform_widgets.dart';
 import 'package:jhijri/jHijri.dart';
 import './date_utils.dart';
@@ -414,7 +415,9 @@ class _CalendarState extends State<Calendar> {
                 style: widget.displayMonthTextStyle ??
                     TextStyle(
                       fontSize: 14.0,
-                      color: Colors.cyan
+                      color: Colors.cyan,
+                        fontFamily: Assets.fontsTajawalRegular
+
 
                     ),
               ),
@@ -422,7 +425,8 @@ class _CalendarState extends State<Calendar> {
                 _hijriDate,
                 style: TextStyle(
                         fontSize: 14.0,
-                        color: Color(0xffb3476e)
+                        color: Color(0xffb3476e),
+                  fontFamily: Assets.fontsTajawalRegular
 
                     ),
               ),
