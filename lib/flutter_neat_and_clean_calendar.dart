@@ -205,7 +205,7 @@ class _CalendarState extends State<Calendar> {
           var monthFormat =
               DateFormat('MMMM yyyy', widget.locale).format(_selectedDate);
           var monthhijriFormat=
-              JHijri(fDate: _selectedDate,fDisplay: DisplayFormat.MMMDDDYYYY).day;
+              JHijri(fDate: _selectedDate,fDisplay: DisplayFormat.MMMDDDYYYY).monthName;
           displayMonth =
               '${monthFormat[0].toUpperCase()}${monthFormat.substring(1)}';
           displayHijriMonth =
