@@ -418,10 +418,10 @@ class _CalendarState extends State<Calendar> {
                     ),
               ),
               Text(
-                '${JHijri(fDate:DateTime.tryParse(displayMonth),fDisplay: DisplayFormat.MMMYYYY).toString().replaceAll('-', ' ')}',
+               displayMonth,
                 style: TextStyle(
                         fontSize: 14.0,
-                        color: Colors.purple
+                        color: Color(0xffb3476e)
 
                     ),
               ),
