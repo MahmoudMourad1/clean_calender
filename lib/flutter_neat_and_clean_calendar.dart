@@ -416,7 +416,7 @@ class _CalendarState extends State<Calendar> {
                     TextStyle(
                       fontSize: 14.0,
                       color:Color(0xff039f94),
-                        fontFamily: Assets.fontsTajawalRegular
+
 
 
                     ),
@@ -426,7 +426,7 @@ class _CalendarState extends State<Calendar> {
                 style: TextStyle(
                         fontSize: 14.0,
                         color: Color(0xffb3476e),
-                  fontFamily: Assets.fontsTajawalRegular
+
 
                     ),
               ),
