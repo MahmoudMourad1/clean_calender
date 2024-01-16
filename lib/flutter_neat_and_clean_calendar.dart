@@ -415,7 +415,7 @@ class _CalendarState extends State<Calendar> {
                 style: widget.displayMonthTextStyle ??
                     TextStyle(
                       fontSize: 14.0,
-                      color: Colors.cyan,
+                      color:Color(0xff039f94),
                         fontFamily: Assets.fontsTajawalRegular
 
 
