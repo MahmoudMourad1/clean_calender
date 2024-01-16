@@ -201,10 +201,8 @@ class _CalendarState extends State<Calendar> {
 
     _selectedDate = widget.initialDate ?? DateTime.now();
     initializeDateFormatting(widget.locale, null).then((_) => setState(() {
-          var monthFormat =
-              DateFormat('MMMM yyyy', widget.locale).format(_selectedDate);
-          displayMonth =
-              '${monthFormat[0].toUpperCase()}${monthFormat.substring(1)}';
+          var monthFormat =DateFormat('MMMM yyyy', widget.locale).format(_selectedDate);
+          displayMonth = '${monthFormat[0].toUpperCase()}${monthFormat.substring(1)}';
         }));
   }
 
@@ -421,8 +419,7 @@ class _CalendarState extends State<Calendar> {
               ),
               Text(
                 '${JHijri(fDate:DateTime.tryParse(displayMonth),fDisplay: DisplayFormat.MMMYYYY).toString().replaceAll('-', ' ')}',
-                style: widget.displayMonthTextStyle ??
-                    TextStyle(
+                style: TextStyle(
                         fontSize: 14.0,
                         color: Colors.purple
 
