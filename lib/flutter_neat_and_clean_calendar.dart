@@ -192,7 +192,6 @@ class _CalendarState extends State<Calendar> {
   String? currentMonth;
   late bool isExpanded;
   String displayMonth = '';
-  String displayHijriMonth = '';
   DateTime get selectedDate => _selectedDate;
   List<NeatCleanCalendarEvent>? _selectedEvents;
 
@@ -204,12 +203,8 @@ class _CalendarState extends State<Calendar> {
     initializeDateFormatting(widget.locale, null).then((_) => setState(() {
           var monthFormat =
               DateFormat('MMMM yyyy', widget.locale).format(_selectedDate);
-          var monthhijriFormat=
-              JHijri(fDate: _selectedDate,fDisplay: DisplayFormat.MMMDDDYYYY).monthName;
           displayMonth =
               '${monthFormat[0].toUpperCase()}${monthFormat.substring(1)}';
-          displayHijriMonth =
-          '${monthhijriFormat}${monthhijriFormat}';
         }));
   }
 
@@ -425,11 +420,11 @@ class _CalendarState extends State<Calendar> {
                     ),
               ),
               Text(
-                displayHijriMonth,
+                '${JHijri(fDate: DateTime.parse(displayMonth),fDisplay: DisplayFormat.MMMYYYY).toString().replaceAll('-', ' ')}',
                 style: widget.displayMonthTextStyle ??
                     TextStyle(
                         fontSize: 14.0,
-                        color: Colors.purple
+                        color: Colors.cyan
 
                     ),
               ),
