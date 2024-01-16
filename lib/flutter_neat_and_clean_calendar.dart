@@ -420,11 +420,11 @@ class _CalendarState extends State<Calendar> {
                     ),
               ),
               Text(
-                '${JHijri(fDate:DateTime.tryParse(displayMonth),fDisplay: DisplayFormat.MMMYYYY).toString().replaceAll('-', ' ')}',
+                '${JHijri(  fDisplay: DisplayFormat.MMMYYYY).toString().replaceAll('-', ' ')}',
                 style: widget.displayMonthTextStyle ??
                     TextStyle(
                         fontSize: 14.0,
-                        color: Colors.cyan
+                        color: Colors.purple
 
                     ),
               ),
