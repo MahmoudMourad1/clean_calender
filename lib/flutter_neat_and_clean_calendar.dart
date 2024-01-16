@@ -419,15 +419,15 @@ class _CalendarState extends State<Calendar> {
 
                     ),
               ),
-              Text(
-                '${JHijri(fDate:DateTime.tryParse(displayMonth),fDisplay: DisplayFormat.MMMYYYY).toString()}',
-                style: widget.displayMonthTextStyle ??
-                    TextStyle(
-                        fontSize: 14.0,
-                        color: Colors.purple
-
-                    ),
-              ),
+              // Text(
+              //   '${JHijri(fDate:DateTime.tryParse(displayMonth),fDisplay: DisplayFormat.MMMYYYY).toString()}',
+              //   style: widget.displayMonthTextStyle ??
+              //       TextStyle(
+              //           fontSize: 14.0,
+              //           color: Colors.purple
+              //
+              //       ),
+              // ),
               // todayIcon ?? Container(),
 
             ],
